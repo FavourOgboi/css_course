@@ -1,0 +1,16 @@
+*{
+    font-family: monospace;
+}
+h1{
+    font-size: 64px;
+    color: aqua;
+}
+
+body{
+    font-size: 22px;
+}
+
+p span{
+    text-transform: uppercase;
+    background-color: gold;
+}

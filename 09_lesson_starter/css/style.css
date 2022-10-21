@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* 1st we apply the css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    margin: 0.5rem;
+}
+
+nav{
+    font-size: 3em;
+    border: 2px solid #333;
+    border-radius: 0.5em;
+    line-height: 2.5;
+    /* for it to stay at the middle and to take only 600px */
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+/* to be a block*/
+li a{
+    display: block;
+}
+
+h2{
+    padding: 1rem;
+    background-color: gold;
+    /* topright topleft downright downleft */
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+li{
+    list-style-type: none;
+    /* adding lines to the top of every list */
+    border-top: 1px solid #333;
+} 
+
+li a{
+    text-decoration:none;
+}
+
+li a:visited{
+    color: #333;
+}
+
+li a:hover, list a:focus{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+li:last-child a{
+    border-radius: 0 0 1rem 1rem;
+}

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  display: flex ;
+  justify-content: center;
+  justify-content: space-between;
+  /* i can use a space inbetween or also use a gap
+  gap: 1rem
+  we also have space-around,space-evenly.
+  */
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: flex-start; 
+} 
+
+.box {
+  min-width: 100px;
+  /* we can use flex-basis to give the width also
+  flex-basis:100px;
+  */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  /* making it a flex container on its own */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-grow:1 /* grow to fill out the page */
+}
+
+/* we can also be specific 
+.box:nth-child(2){
+  flex-grow: 2;
+}
+we also have flex-shrink
+flex-shrink:2;
+
+shorthand
+
+flex: shrink grow basis
+flex: 3 3 40;
+*/
+.box:nth-child(2){
+  order:4; /* we can also change the order
+  0 = to the  bosition back
+  -1 to the beginning
+  
+  if the rows is reveresed we will have somthing diffrent*/  
+}

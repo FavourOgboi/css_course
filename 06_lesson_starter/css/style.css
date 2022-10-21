@@ -1,0 +1,31 @@
+/* 
+Typography is the way the text
+is arranged and presented 
+*/
+
+body{
+    padding:25%;
+    font-size: 2rem;
+}
+
+/* input,button{
+    font-size: inherit ;
+} */
+
+p{
+    text-decoration: underline ;
+    text-transform: uppercase;
+    text-align:left ;
+    text-indent: 2em;/* creates a space like
+    leaving a paragraph*/
+    text-decoration-color: red;
+    line-height:1.5em;/* helps readability and 
+    spacing the texts */
+    letter-spacing: 0.1em;/* helps to spacing 
+    letters of a word */
+    word-spacing: 0.5em;/* helps to spacing words*/
+    font-weight: bold;/* helps to bolden words
+    to ones preferred way*/
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+}

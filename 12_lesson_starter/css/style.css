@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+/* to remove the spacing at the top of the first paragraph*/
+
+p{
+  padding: 0;
+  margin: 0;
+}
+/* or */
+.columns p{
+  margin-top: 0;
+}
+
+.columns{
+  column-count: 4;
+  column-width: 250px;
+  /* a short way to write that which means crate 4 columns as long
+  as the screen width isnt less than 250px is by writting it like
+  
+  column: 4 250px ;             */
+
+/* adding a column divider when they are columns to seperate */
+  column-rule: 3px solid black;
+/* to give spacing */
+  column-gap: 3rem;
+}
+
+.columns h2{
+  margin-top: 1;
+  background-color: #333;
+  color: beige;
+  padding: 1rem;
+  break-inside: avoid;
+}
+
+/* This is not all that there is so watch the 
+video (3:12)*/

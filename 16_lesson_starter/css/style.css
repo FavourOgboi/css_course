@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Begin reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* End reset */
+
+/* End Utility classes */
+.nowrap{
+  white-space: nowrap;
+}
+
+.offscreen{
+  position: absolute;
+  left: -10000000px;
+}
+/* Utility classes */
+
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+
+  background-color: aliceblue;
+  /* linear gradient with image*/
+  background-image:url(../img/bubbles.png), linear-gradient(to left,steelblue,white);
+  background-repeat: repeat-y,no-repeat;
+  background-position: right center;
+  background-size: 20%,auto;
+}
+
+.container{
+   /* if the background image dosnt load at least a color replaces */
+   background-color: rgb(251,210,156);
+   background-image: url('../img/map-2176x1451.png');
+   color: #fff;
+  /*position to display x axis  y axis*/
+   background-position: bottom right ;
+   background-repeat: repeat;
+   /* to make a big image still fit */
+   background-size: cover;
+
+}
+
+/* container tag */
+.hero{
+  border-bottom:2px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.401);
+}
+
+.h1{
+  font-size: 500%;
+  color: aliceblue;
+  text-shadow: 2px 2px 5px black;
+  background-color: rgba(0, 0, 0, 0.401);
+  padding: 0.25rem;
+  border-radius: 10px;
+
+}
+
+.profile-pic-figure{
+  width: 35%;
+}
+
+.profile-pic-figure img{
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  border: 1px solid gray;
+  /* making it round */
+  border-radius: 50%;
+  padding: 0.362em;
+  background-color: rgba(255, 255, 255, 0.555);
+}
+
+
+
+
+/*  seting img to a block element to remove space underneath */
+img{
+  display: block;
+}
+
+.example{
+  margin-top: 1rem;
+  padding-left: 20px;
+  border: 1px solid red;
+}
+
+.example img{
+  width: 20%; /* this width is 25% of the container size not image */
+  height: auto; /* to respond to the width */
+
+}

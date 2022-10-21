@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    font-size: 1.5rem;
+    border: 2px dashed blue;
+    border-top-style:outset ;
+    border-bottom: 3px double red;
+    outline: 3px double purple;
+    outline-offset:-20px ;
+    padding: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    /* we also have a 
+    short hand method 
+    for this
+
+    padding :top rig but left
+    margin :top rig but left
+    padding :top&but ,left$right
+    margin :top&but ,left$right
+    
+
+    border-style and etc can
+    also work
+    */
+}
+
+/* creating a circle box model */
+
+.circle{
+    /* auto places it(div) at 
+    the middle of the left to right
+    */
+    margin: 3rem auto; 
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    /* note that the width and hei
+    ght is 100px, border radius bends
+    the edges of the border. so is 
+    we bend it half or greater
+    than its w&h it will become a 
+    circle */
+    border-radius: 100px;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+}
